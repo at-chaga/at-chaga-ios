@@ -1,0 +1,811 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D2CD6939229CBA57CBB83F0 /* Pods_AtchagaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117761CC77FAD3C0347AC873 /* Pods_AtchagaUITests.framework */; };
+		52ABAEECC310521B28C6418D /* Pods_Atchaga.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8546FE80EFC64DD4BEE5170 /* Pods_Atchaga.framework */; };
+		77660E68F7AACCF8AF2D020C /* Pods_AtchagaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 483047FD19748105C4BF4000 /* Pods_AtchagaTests.framework */; };
+		FF24ACB22277D442008414C3 /* CommonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF24ACB12277D442008414C3 /* CommonExtensions.swift */; };
+		FF3A012522770808000B27FF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3A012422770808000B27FF /* MainViewController.swift */; };
+		FF3A012B22771231000B27FF /* MainInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3A012A22771231000B27FF /* MainInfoCell.swift */; };
+		FF3A013022772465000B27FF /* MainInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3A012F22772465000B27FF /* MainInfoViewModel.swift */; };
+		FF3A0132227725DD000B27FF /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3A0131227725DD000B27FF /* MainViewModel.swift */; };
+		FF4A216A2276F02D009504E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A21692276F02D009504E8 /* AppDelegate.swift */; };
+		FF4A216C2276F02D009504E8 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A216B2276F02D009504E8 /* TabViewController.swift */; };
+		FF4A216F2276F02D009504E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4A216D2276F02D009504E8 /* Main.storyboard */; };
+		FF4A21722276F02D009504E8 /* Atchaga.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF4A21702276F02D009504E8 /* Atchaga.xcdatamodeld */; };
+		FF4A21742276F02F009504E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4A21732276F02F009504E8 /* Assets.xcassets */; };
+		FF4A21772276F02F009504E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4A21752276F02F009504E8 /* LaunchScreen.storyboard */; };
+		FF4A21822276F02F009504E8 /* AtchagaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A21812276F02F009504E8 /* AtchagaTests.swift */; };
+		FF4A218D2276F02F009504E8 /* AtchagaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A218C2276F02F009504E8 /* AtchagaUITests.swift */; };
+		FF4A21B32276F2AE009504E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF4A21B22276F2AE009504E8 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF4A217E2276F02F009504E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF4A215E2276F02D009504E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF4A21652276F02D009504E8;
+			remoteInfo = Atchaga;
+		};
+		FF4A21892276F02F009504E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF4A215E2276F02D009504E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF4A21652276F02D009504E8;
+			remoteInfo = Atchaga;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01AF5306C301E6CCC0453B52 /* Pods-AtchagaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtchagaUITests.release.xcconfig"; path = "Target Support Files/Pods-AtchagaUITests/Pods-AtchagaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		117761CC77FAD3C0347AC873 /* Pods_AtchagaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AtchagaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		483047FD19748105C4BF4000 /* Pods_AtchagaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AtchagaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BBB306CDA071AA75C2758FF /* Pods-AtchagaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtchagaTests.debug.xcconfig"; path = "Target Support Files/Pods-AtchagaTests/Pods-AtchagaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6047C915C2226F4859A1FC63 /* Pods-Atchaga.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atchaga.release.xcconfig"; path = "Target Support Files/Pods-Atchaga/Pods-Atchaga.release.xcconfig"; sourceTree = "<group>"; };
+		714FA640268B07343E8C0129 /* Pods-AtchagaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtchagaUITests.debug.xcconfig"; path = "Target Support Files/Pods-AtchagaUITests/Pods-AtchagaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B5BEEF24EB2DE9A1C21B2759 /* Pods-AtchagaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtchagaTests.release.xcconfig"; path = "Target Support Files/Pods-AtchagaTests/Pods-AtchagaTests.release.xcconfig"; sourceTree = "<group>"; };
+		EE0010D0E29209903C2B47F4 /* Pods-Atchaga.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atchaga.debug.xcconfig"; path = "Target Support Files/Pods-Atchaga/Pods-Atchaga.debug.xcconfig"; sourceTree = "<group>"; };
+		F8546FE80EFC64DD4BEE5170 /* Pods_Atchaga.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Atchaga.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF24ACB12277D442008414C3 /* CommonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonExtensions.swift; sourceTree = "<group>"; };
+		FF3A012422770808000B27FF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FF3A012A22771231000B27FF /* MainInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInfoCell.swift; sourceTree = "<group>"; };
+		FF3A012F22772465000B27FF /* MainInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInfoViewModel.swift; sourceTree = "<group>"; };
+		FF3A0131227725DD000B27FF /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		FF4A21662276F02D009504E8 /* Atchaga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Atchaga.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4A21692276F02D009504E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF4A216B2276F02D009504E8 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		FF4A216E2276F02D009504E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF4A21712276F02D009504E8 /* Atchaga.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Atchaga.xcdatamodel; sourceTree = "<group>"; };
+		FF4A21732276F02F009504E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF4A21762276F02F009504E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF4A21782276F02F009504E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF4A217D2276F02F009504E8 /* AtchagaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AtchagaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4A21812276F02F009504E8 /* AtchagaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtchagaTests.swift; sourceTree = "<group>"; };
+		FF4A21832276F02F009504E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF4A21882276F02F009504E8 /* AtchagaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AtchagaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4A218C2276F02F009504E8 /* AtchagaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtchagaUITests.swift; sourceTree = "<group>"; };
+		FF4A218E2276F02F009504E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF4A219C2276F1AC009504E8 /* Atchaga.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Atchaga.entitlements; sourceTree = "<group>"; };
+		FF4A21B22276F2AE009504E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF4A21632276F02D009504E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52ABAEECC310521B28C6418D /* Pods_Atchaga.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4A217A2276F02F009504E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77660E68F7AACCF8AF2D020C /* Pods_AtchagaTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4A21852276F02F009504E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D2CD6939229CBA57CBB83F0 /* Pods_AtchagaUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EA5B9C7CFE5344F18218460 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE0010D0E29209903C2B47F4 /* Pods-Atchaga.debug.xcconfig */,
+				6047C915C2226F4859A1FC63 /* Pods-Atchaga.release.xcconfig */,
+				4BBB306CDA071AA75C2758FF /* Pods-AtchagaTests.debug.xcconfig */,
+				B5BEEF24EB2DE9A1C21B2759 /* Pods-AtchagaTests.release.xcconfig */,
+				714FA640268B07343E8C0129 /* Pods-AtchagaUITests.debug.xcconfig */,
+				01AF5306C301E6CCC0453B52 /* Pods-AtchagaUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D422B44333D0D0F101AD1581 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8546FE80EFC64DD4BEE5170 /* Pods_Atchaga.framework */,
+				483047FD19748105C4BF4000 /* Pods_AtchagaTests.framework */,
+				117761CC77FAD3C0347AC873 /* Pods_AtchagaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF24ACB02277D42F008414C3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FF24ACB12277D442008414C3 /* CommonExtensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FF3A01262277080B000B27FF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FF3A012E22772455000B27FF /* ViewModel */,
+				FF3A012422770808000B27FF /* MainViewController.swift */,
+				FF3A012A22771231000B27FF /* MainInfoCell.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FF3A01272277081B000B27FF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF4A219C2276F1AC009504E8 /* Atchaga.entitlements */,
+				FF4A21732276F02F009504E8 /* Assets.xcassets */,
+				FF4A21782276F02F009504E8 /* Info.plist */,
+				FF4A21752276F02F009504E8 /* LaunchScreen.storyboard */,
+				FF4A21702276F02D009504E8 /* Atchaga.xcdatamodeld */,
+				FF4A21B22276F2AE009504E8 /* GoogleService-Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		FF3A012E22772455000B27FF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FF3A0131227725DD000B27FF /* MainViewModel.swift */,
+				FF3A012F22772465000B27FF /* MainInfoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FF4A215D2276F02D009504E8 = {
+			isa = PBXGroup;
+			children = (
+				FF4A21682276F02D009504E8 /* Atchaga */,
+				FF4A21802276F02F009504E8 /* AtchagaTests */,
+				FF4A218B2276F02F009504E8 /* AtchagaUITests */,
+				FF4A21672276F02D009504E8 /* Products */,
+				4EA5B9C7CFE5344F18218460 /* Pods */,
+				D422B44333D0D0F101AD1581 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF4A21672276F02D009504E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF4A21662276F02D009504E8 /* Atchaga.app */,
+				FF4A217D2276F02F009504E8 /* AtchagaTests.xctest */,
+				FF4A21882276F02F009504E8 /* AtchagaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF4A21682276F02D009504E8 /* Atchaga */ = {
+			isa = PBXGroup;
+			children = (
+				FF24ACB02277D42F008414C3 /* Utils */,
+				FF3A01262277080B000B27FF /* Main */,
+				FF4A21692276F02D009504E8 /* AppDelegate.swift */,
+				FF4A216D2276F02D009504E8 /* Main.storyboard */,
+				FF3A01272277081B000B27FF /* Support Files */,
+				FF4A216B2276F02D009504E8 /* TabViewController.swift */,
+			);
+			path = Atchaga;
+			sourceTree = "<group>";
+		};
+		FF4A21802276F02F009504E8 /* AtchagaTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF4A21812276F02F009504E8 /* AtchagaTests.swift */,
+				FF4A21832276F02F009504E8 /* Info.plist */,
+			);
+			path = AtchagaTests;
+			sourceTree = "<group>";
+		};
+		FF4A218B2276F02F009504E8 /* AtchagaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF4A218C2276F02F009504E8 /* AtchagaUITests.swift */,
+				FF4A218E2276F02F009504E8 /* Info.plist */,
+			);
+			path = AtchagaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF4A21652276F02D009504E8 /* Atchaga */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4A21912276F02F009504E8 /* Build configuration list for PBXNativeTarget "Atchaga" */;
+			buildPhases = (
+				5EA96500D760F3B92477E58D /* [CP] Check Pods Manifest.lock */,
+				FF4A21622276F02D009504E8 /* Sources */,
+				FF4A21632276F02D009504E8 /* Frameworks */,
+				FF4A21642276F02D009504E8 /* Resources */,
+				69F35A3B5C5D1AD2FFAA7D3D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Atchaga;
+			productName = Atchaga;
+			productReference = FF4A21662276F02D009504E8 /* Atchaga.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF4A217C2276F02F009504E8 /* AtchagaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4A21942276F02F009504E8 /* Build configuration list for PBXNativeTarget "AtchagaTests" */;
+			buildPhases = (
+				D1A8A4E22C9B1DF9E4B26A33 /* [CP] Check Pods Manifest.lock */,
+				FF4A21792276F02F009504E8 /* Sources */,
+				FF4A217A2276F02F009504E8 /* Frameworks */,
+				FF4A217B2276F02F009504E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF4A217F2276F02F009504E8 /* PBXTargetDependency */,
+			);
+			name = AtchagaTests;
+			productName = AtchagaTests;
+			productReference = FF4A217D2276F02F009504E8 /* AtchagaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF4A21872276F02F009504E8 /* AtchagaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4A21972276F02F009504E8 /* Build configuration list for PBXNativeTarget "AtchagaUITests" */;
+			buildPhases = (
+				9F1ADF38831F914E428CFF7C /* [CP] Check Pods Manifest.lock */,
+				FF4A21842276F02F009504E8 /* Sources */,
+				FF4A21852276F02F009504E8 /* Frameworks */,
+				FF4A21862276F02F009504E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF4A218A2276F02F009504E8 /* PBXTargetDependency */,
+			);
+			name = AtchagaUITests;
+			productName = AtchagaUITests;
+			productReference = FF4A21882276F02F009504E8 /* AtchagaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF4A215E2276F02D009504E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Atchaga;
+				TargetAttributes = {
+					FF4A21652276F02D009504E8 = {
+						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					FF4A217C2276F02F009504E8 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = FF4A21652276F02D009504E8;
+					};
+					FF4A21872276F02F009504E8 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = FF4A21652276F02D009504E8;
+					};
+				};
+			};
+			buildConfigurationList = FF4A21612276F02D009504E8 /* Build configuration list for PBXProject "Atchaga" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF4A215D2276F02D009504E8;
+			productRefGroup = FF4A21672276F02D009504E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF4A21652276F02D009504E8 /* Atchaga */,
+				FF4A217C2276F02F009504E8 /* AtchagaTests */,
+				FF4A21872276F02F009504E8 /* AtchagaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF4A21642276F02D009504E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4A21772276F02F009504E8 /* LaunchScreen.storyboard in Resources */,
+				FF4A21B32276F2AE009504E8 /* GoogleService-Info.plist in Resources */,
+				FF4A21742276F02F009504E8 /* Assets.xcassets in Resources */,
+				FF4A216F2276F02D009504E8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4A217B2276F02F009504E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4A21862276F02F009504E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EA96500D760F3B92477E58D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Atchaga-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69F35A3B5C5D1AD2FFAA7D3D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Atchaga/Pods-Atchaga-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Atchaga/Pods-Atchaga-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Atchaga/Pods-Atchaga-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F1ADF38831F914E428CFF7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AtchagaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1A8A4E22C9B1DF9E4B26A33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AtchagaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF4A21622276F02D009504E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF3A0132227725DD000B27FF /* MainViewModel.swift in Sources */,
+				FF4A216C2276F02D009504E8 /* TabViewController.swift in Sources */,
+				FF24ACB22277D442008414C3 /* CommonExtensions.swift in Sources */,
+				FF4A216A2276F02D009504E8 /* AppDelegate.swift in Sources */,
+				FF3A012B22771231000B27FF /* MainInfoCell.swift in Sources */,
+				FF4A21722276F02D009504E8 /* Atchaga.xcdatamodeld in Sources */,
+				FF3A012522770808000B27FF /* MainViewController.swift in Sources */,
+				FF3A013022772465000B27FF /* MainInfoViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4A21792276F02F009504E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4A21822276F02F009504E8 /* AtchagaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4A21842276F02F009504E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4A218D2276F02F009504E8 /* AtchagaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF4A217F2276F02F009504E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF4A21652276F02D009504E8 /* Atchaga */;
+			targetProxy = FF4A217E2276F02F009504E8 /* PBXContainerItemProxy */;
+		};
+		FF4A218A2276F02F009504E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF4A21652276F02D009504E8 /* Atchaga */;
+			targetProxy = FF4A21892276F02F009504E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF4A216D2276F02D009504E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF4A216E2276F02D009504E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF4A21752276F02F009504E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF4A21762276F02F009504E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF4A218F2276F02F009504E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF4A21902276F02F009504E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF4A21922276F02F009504E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE0010D0E29209903C2B47F4 /* Pods-Atchaga.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Atchaga/Support Files/Atchaga.entitlements";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9T434D2H3E;
+				INFOPLIST_FILE = "$(SRCROOT)/Atchaga/Support Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.claypark.Atchaga;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Atchaga-developement";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF4A21932276F02F009504E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6047C915C2226F4859A1FC63 /* Pods-Atchaga.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Atchaga/Support Files/Atchaga.entitlements";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9T434D2H3E;
+				INFOPLIST_FILE = "$(SRCROOT)/Atchaga/Support Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.claypark.Atchaga;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Atchaga-developement";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF4A21952276F02F009504E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BBB306CDA071AA75C2758FF /* Pods-AtchagaTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JCL4ZMJSP;
+				INFOPLIST_FILE = AtchagaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.atchaga.AtchagaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Atchaga.app/Atchaga";
+			};
+			name = Debug;
+		};
+		FF4A21962276F02F009504E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5BEEF24EB2DE9A1C21B2759 /* Pods-AtchagaTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JCL4ZMJSP;
+				INFOPLIST_FILE = AtchagaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.atchaga.AtchagaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Atchaga.app/Atchaga";
+			};
+			name = Release;
+		};
+		FF4A21982276F02F009504E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 714FA640268B07343E8C0129 /* Pods-AtchagaUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JCL4ZMJSP;
+				INFOPLIST_FILE = AtchagaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.atchaga.AtchagaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Atchaga;
+			};
+			name = Debug;
+		};
+		FF4A21992276F02F009504E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01AF5306C301E6CCC0453B52 /* Pods-AtchagaUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5JCL4ZMJSP;
+				INFOPLIST_FILE = AtchagaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.atchaga.AtchagaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Atchaga;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF4A21612276F02D009504E8 /* Build configuration list for PBXProject "Atchaga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4A218F2276F02F009504E8 /* Debug */,
+				FF4A21902276F02F009504E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF4A21912276F02F009504E8 /* Build configuration list for PBXNativeTarget "Atchaga" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4A21922276F02F009504E8 /* Debug */,
+				FF4A21932276F02F009504E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF4A21942276F02F009504E8 /* Build configuration list for PBXNativeTarget "AtchagaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4A21952276F02F009504E8 /* Debug */,
+				FF4A21962276F02F009504E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF4A21972276F02F009504E8 /* Build configuration list for PBXNativeTarget "AtchagaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4A21982276F02F009504E8 /* Debug */,
+				FF4A21992276F02F009504E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FF4A21702276F02D009504E8 /* Atchaga.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF4A21712276F02D009504E8 /* Atchaga.xcdatamodel */,
+			);
+			currentVersion = FF4A21712276F02D009504E8 /* Atchaga.xcdatamodel */;
+			path = Atchaga.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FF4A215E2276F02D009504E8 /* Project object */;
+}

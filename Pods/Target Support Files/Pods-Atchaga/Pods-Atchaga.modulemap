@@ -1,0 +1,6 @@
+framework module Pods_Atchaga {
+  umbrella header "Pods-Atchaga-umbrella.h"
+
+  export *
+  module * { export * }
+}
