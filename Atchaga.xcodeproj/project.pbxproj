@@ -135,9 +135,17 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		FF24ACB32277F4FF008414C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FF3A01262277080B000B27FF /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				FF24ACB32277F4FF008414C3 /* View */,
 				FF3A012E22772455000B27FF /* ViewModel */,
 				FF3A012422770808000B27FF /* MainViewController.swift */,
 				FF3A012A22771231000B27FF /* MainInfoCell.swift */,

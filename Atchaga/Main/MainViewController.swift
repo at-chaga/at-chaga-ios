@@ -12,6 +12,8 @@ import RxCocoa
 
 final class MainViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    weak var floatingButton: UIButton?
+    
     private let disposeBag = DisposeBag()
     
     var viewModel: MainViewModel?
@@ -22,9 +24,12 @@ final class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupFloatingButton()
+        
         fetchMainInfo { success in
             if success {
                 setupTableView()
+                showFloatingButton()
             } else {
                 showReloadView()
             }
@@ -39,6 +44,31 @@ final class MainViewController: UIViewController {
         tableView.estimatedRowHeight = 200
     }
     
+    private func setupFloatingButton() {
+        let floatingButton = UIButton()
+        floatingButton.setImage(UIImage(named: "btn_camera"), for: .normal)
+        floatingButton.contentMode = .scaleAspectFit
+        floatingButton.contentHorizontalAlignment = .fill
+        floatingButton.contentVerticalAlignment = .fill
+        
+        floatingButton.rx.tap.subscribe(onNext: {
+        }).disposed(by: disposeBag)
+        
+        view.insertSubview(floatingButton, aboveSubview: tableView)
+        floatingButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            floatingButton.widthAnchor.constraint(equalToConstant: 60),
+            floatingButton.heightAnchor.constraint(equalToConstant: 60),
+            floatingButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30),
+            floatingButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30)
+        ])
+        
+        self.floatingButton = floatingButton
+        
+        floatingButton.isHidden = true
+    }
+    
     private func fetchMainInfo(complete: ((_ success: Bool) -> ())) {
         // Request api
         viewModel = MainViewModel.mock()
@@ -47,6 +77,10 @@ final class MainViewController: UIViewController {
     
     private func showReloadView() {
         // Show reload view
+    }
+    
+    private func showFloatingButton() {
+        self.floatingButton?.isHidden = false
     }
 }
 
