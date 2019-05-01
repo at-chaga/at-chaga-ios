@@ -10,6 +10,7 @@
 		1D2CD6939229CBA57CBB83F0 /* Pods_AtchagaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 117761CC77FAD3C0347AC873 /* Pods_AtchagaUITests.framework */; };
 		52ABAEECC310521B28C6418D /* Pods_Atchaga.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8546FE80EFC64DD4BEE5170 /* Pods_Atchaga.framework */; };
 		77660E68F7AACCF8AF2D020C /* Pods_AtchagaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 483047FD19748105C4BF4000 /* Pods_AtchagaTests.framework */; };
+		FF032F5A22793A1300FF637C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF032F5922793A1300FF637C /* CameraViewController.swift */; };
 		FF24ACB22277D442008414C3 /* CommonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF24ACB12277D442008414C3 /* CommonExtensions.swift */; };
 		FF3A012522770808000B27FF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3A012422770808000B27FF /* MainViewController.swift */; };
 		FF3A012B22771231000B27FF /* MainInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3A012A22771231000B27FF /* MainInfoCell.swift */; };
@@ -24,6 +25,7 @@
 		FF4A21822276F02F009504E8 /* AtchagaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A21812276F02F009504E8 /* AtchagaTests.swift */; };
 		FF4A218D2276F02F009504E8 /* AtchagaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4A218C2276F02F009504E8 /* AtchagaUITests.swift */; };
 		FF4A21B32276F2AE009504E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF4A21B22276F2AE009504E8 /* GoogleService-Info.plist */; };
+		FF4AAE452278440D0052A7E2 /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4AAE442278440D0052A7E2 /* Segue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,7 @@
 		B5BEEF24EB2DE9A1C21B2759 /* Pods-AtchagaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AtchagaTests.release.xcconfig"; path = "Target Support Files/Pods-AtchagaTests/Pods-AtchagaTests.release.xcconfig"; sourceTree = "<group>"; };
 		EE0010D0E29209903C2B47F4 /* Pods-Atchaga.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Atchaga.debug.xcconfig"; path = "Target Support Files/Pods-Atchaga/Pods-Atchaga.debug.xcconfig"; sourceTree = "<group>"; };
 		F8546FE80EFC64DD4BEE5170 /* Pods_Atchaga.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Atchaga.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF032F5922793A1300FF637C /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		FF24ACB12277D442008414C3 /* CommonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonExtensions.swift; sourceTree = "<group>"; };
 		FF3A012422770808000B27FF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FF3A012A22771231000B27FF /* MainInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInfoCell.swift; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 		FF4A218E2276F02F009504E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF4A219C2276F1AC009504E8 /* Atchaga.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Atchaga.entitlements; sourceTree = "<group>"; };
 		FF4A21B22276F2AE009504E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FF4AAE442278440D0052A7E2 /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,10 +131,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FF032F58227939F100FF637C /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				FF032F5922793A1300FF637C /* CameraViewController.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
 		FF24ACB02277D42F008414C3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 				FF24ACB12277D442008414C3 /* CommonExtensions.swift */,
+				FF4AAE442278440D0052A7E2 /* Segue.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -202,6 +215,7 @@
 			children = (
 				FF24ACB02277D42F008414C3 /* Utils */,
 				FF3A01262277080B000B27FF /* Main */,
+				FF032F58227939F100FF637C /* Camera */,
 				FF4A21692276F02D009504E8 /* AppDelegate.swift */,
 				FF4A216D2276F02D009504E8 /* Main.storyboard */,
 				FF3A01272277081B000B27FF /* Support Files */,
@@ -456,12 +470,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF3A0132227725DD000B27FF /* MainViewModel.swift in Sources */,
+				FF032F5A22793A1300FF637C /* CameraViewController.swift in Sources */,
 				FF4A216C2276F02D009504E8 /* TabViewController.swift in Sources */,
 				FF24ACB22277D442008414C3 /* CommonExtensions.swift in Sources */,
 				FF4A216A2276F02D009504E8 /* AppDelegate.swift in Sources */,
 				FF3A012B22771231000B27FF /* MainInfoCell.swift in Sources */,
 				FF4A21722276F02D009504E8 /* Atchaga.xcdatamodeld in Sources */,
 				FF3A012522770808000B27FF /* MainViewController.swift in Sources */,
+				FF4AAE452278440D0052A7E2 /* Segue.swift in Sources */,
 				FF3A013022772465000B27FF /* MainInfoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

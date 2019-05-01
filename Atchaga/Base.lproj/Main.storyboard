@@ -196,11 +196,79 @@
                     <navigationItem key="navigationItem" id="p1k-qD-hsa"/>
                     <connections>
                         <outlet property="tableView" destination="1eM-sn-RXS" id="zmw-dI-3aD"/>
+                        <segue destination="4RS-TO-cLq" kind="showDetail" identifier="segue.main.to.camera" id="9Sj-te-Wke"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wdZ-jb-On3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="400.80000000000001" y="-591.45427286356824"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="ewf-Lm-S4D">
+            <objects>
+                <viewController id="4RS-TO-cLq" customClass="CameraViewController" customModule="Atchaga" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L67-o6-xp8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YhM-Wa-f72" userLabel="Keyboard">
+                                <rect key="frame" x="16" y="36" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Dzz-Gr-Fc8"/>
+                                    <constraint firstAttribute="height" constant="40" id="lDw-q5-n7i"/>
+                                </constraints>
+                                <state key="normal" image="btn_keyboard"/>
+                                <state key="selected">
+                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NfS-Cn-wMM" userLabel="Close">
+                                <rect key="frame" x="319" y="36" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hsr-IL-10J"/>
+                                    <constraint firstAttribute="width" constant="40" id="svc-y6-A2E"/>
+                                </constraints>
+                                <state key="normal" image="btn_close_white"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G5l-K7-xSD" userLabel="Camera View">
+                                <rect key="frame" x="0.0" y="92" width="375" height="463"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPu-iE-GSy" userLabel="Shutter">
+                                <rect key="frame" x="147.5" y="571" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Ttc-1m-UbV"/>
+                                    <constraint firstAttribute="width" constant="80" id="eiq-6V-7ij"/>
+                                </constraints>
+                                <state key="normal" image="btn_shutter"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.39215686274509803" green="0.58823529411764708" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EPu-iE-GSy" firstAttribute="top" secondItem="G5l-K7-xSD" secondAttribute="bottom" constant="16" id="5FM-vU-ANy"/>
+                            <constraint firstItem="YhM-Wa-f72" firstAttribute="top" secondItem="Gi4-Zs-Hcr" secondAttribute="top" constant="16" id="5Ua-Gw-VHG"/>
+                            <constraint firstItem="EPu-iE-GSy" firstAttribute="centerX" secondItem="Gi4-Zs-Hcr" secondAttribute="centerX" id="7dH-jY-oC3"/>
+                            <constraint firstItem="G5l-K7-xSD" firstAttribute="top" secondItem="NfS-Cn-wMM" secondAttribute="bottom" constant="16" id="H21-Xb-byI"/>
+                            <constraint firstItem="NfS-Cn-wMM" firstAttribute="top" secondItem="Gi4-Zs-Hcr" secondAttribute="top" constant="16" id="KCB-Sn-mmy"/>
+                            <constraint firstItem="Gi4-Zs-Hcr" firstAttribute="bottom" secondItem="EPu-iE-GSy" secondAttribute="bottom" constant="16" id="P3M-ac-DF5"/>
+                            <constraint firstItem="G5l-K7-xSD" firstAttribute="top" secondItem="YhM-Wa-f72" secondAttribute="bottom" constant="16" id="PsJ-LA-jU7"/>
+                            <constraint firstItem="G5l-K7-xSD" firstAttribute="leading" secondItem="L67-o6-xp8" secondAttribute="leading" id="ZFA-lg-EE6"/>
+                            <constraint firstAttribute="trailing" secondItem="G5l-K7-xSD" secondAttribute="trailing" id="roK-s2-oGD"/>
+                            <constraint firstItem="YhM-Wa-f72" firstAttribute="leading" secondItem="Gi4-Zs-Hcr" secondAttribute="leading" constant="16" id="uKZ-sx-waL"/>
+                            <constraint firstItem="Gi4-Zs-Hcr" firstAttribute="trailing" secondItem="NfS-Cn-wMM" secondAttribute="trailing" constant="16" id="zlC-Dm-mfu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gi4-Zs-Hcr"/>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="G5l-K7-xSD" id="70f-oa-uR3"/>
+                        <outlet property="closeButton" destination="NfS-Cn-wMM" id="t4D-sh-fvg"/>
+                        <outlet property="keyboardButton" destination="YhM-Wa-f72" id="S27-KR-ppf"/>
+                        <outlet property="shutterButton" destination="EPu-iE-GSy" id="1RN-lf-64f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7po-Bv-oLH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1224.8" y="-588.75562218890559"/>
         </scene>
         <!--Tab View Controller-->
         <scene sceneID="b1o-Pr-EPZ">
@@ -220,4 +288,9 @@
             <point key="canvasLocation" x="-1369" y="-241"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="btn_close_white" width="75" height="75"/>
+        <image name="btn_keyboard" width="96" height="96"/>
+        <image name="btn_shutter" width="48" height="48"/>
+    </resources>
 </document>

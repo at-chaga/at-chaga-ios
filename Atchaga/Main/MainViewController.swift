@@ -19,7 +19,10 @@ final class MainViewController: UIViewController {
     var viewModel: MainViewModel?
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+//        let viewController = segue.destination
+        if segue.identifier == Segue.mainToCamera.rawValue {
+            print("Segue to Camera vc")
+        }
     }
     
     override func viewDidLoad() {
@@ -51,8 +54,11 @@ final class MainViewController: UIViewController {
         floatingButton.contentHorizontalAlignment = .fill
         floatingButton.contentVerticalAlignment = .fill
         
-        floatingButton.rx.tap.subscribe(onNext: {
-        }).disposed(by: disposeBag)
+        floatingButton.rx.tap
+            .debounce(0.2, scheduler: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] in
+                self?.performSegue(withIdentifier: Segue.mainToCamera.rawValue, sender: nil)
+            }).disposed(by: disposeBag)
         
         view.insertSubview(floatingButton, aboveSubview: tableView)
         floatingButton.translatesAutoresizingMaskIntoConstraints = false
