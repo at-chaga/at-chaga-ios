@@ -35,6 +35,13 @@ final class CameraViewController: UIViewController {
         captureSession.startRunning()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        captureSession?.stopRunning()
+    }
+    
+    // MARK: - Camera
+    
     private func setupSession() {
         captureSession = AVCaptureSession()
         captureSession.sessionPreset = .medium
@@ -88,8 +95,18 @@ final class CameraViewController: UIViewController {
         
         shutterButton.rx.tap
             .debounce(0.2, scheduler: MainScheduler.instance)
-            .subscribe(onNext: {
-                print("shutter")
+            .subscribe(onNext: { [weak self] in
+                guard let self = self else { return }
+                let settings = AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecType.jpeg])
+                self.imageOutput?.capturePhoto(with: settings, delegate: self)
             }).disposed(by: disposeBag)
+    }
+}
+
+extension CameraViewController: AVCapturePhotoCaptureDelegate {
+    func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
+        guard let imageData = photo.fileDataRepresentation() else { return }
+        
+        let _ = UIImage(data: imageData)
     }
 }
